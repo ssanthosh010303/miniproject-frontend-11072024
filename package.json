@@ -1,0 +1,15 @@
+{
+  "name": "miniproject-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "terser ./public/js/*.js --compress --mangle --output dist/"
+  },
+  "keywords": [],
+  "author": "Bank Bros",
+  "license": "MIT",
+  "description": "A dummy web ATM application built for no reason.",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

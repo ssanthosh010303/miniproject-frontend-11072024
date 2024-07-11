@@ -1,0 +1,44 @@
+/*
+ * Author: Bank Bros
+ * Created on: 11/07/2024
+*/
+body {
+  background: radial-gradient(circle, #202020 0%, #151515 90%);
+  animation: fade-in 2s ease-out;
+}
+
+#logo {
+  font-size: 80px;
+  animation: bounce 1s ease-out;
+}
+
+.btn {
+  transition: transform 0.25s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  50% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
