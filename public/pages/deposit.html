@@ -10,30 +10,35 @@
 </head>
 
 <body class="bg-black container">
-  <main class="bg-body border mx-auto my-3 p-3 rounded" style="max-width: 500px;">
-    <h2 class="text-center">Deposit</h2>
-    <form>
-      <b><label class="form-label" for="cardno-input">Credit/Debit Card #</label></b>
-      <div class="input-group mb-3">
-        <span class="input-group-text">💳</span>
-        <input type="number" class="form-control" id="cardno-input" name="cardno" required>
-      </div>
+  <main class="bg-body border mx-auto my-3 p-3 row align-items-center rounded">
+    <div class="col-lg d-none d-lg-block">
+      <img class="img-fluid" src="../assets/credit-card.png" alt="Credit Card Illustration">
+    </div>
+    <div class="col-lg mx-0 px-0">
+      <h2 class="">Deposit</h2>
+      <form>
+        <b><label class="form-label" for="cardno-input">Credit/Debit Card #</label></b>
+        <div class="input-group mb-3">
+          <span class="input-group-text">💳</span>
+          <input type="number" class="form-control" id="cardno-input" name="cardno" required>
+        </div>
 
-      <b><label class="form-label" for="amount-input">Amount</label></b>
-      <div class="input-group mb-3">
-        <span class="input-group-text">💲</span>
-        <input type="number" class="form-control" id="amount-input" name="amount" required>
-      </div>
+        <b><label class="form-label" for="amount-input">Amount</label></b>
+        <div class="input-group mb-3">
+          <span class="input-group-text">💲</span>
+          <input type="number" class="form-control" id="amount-input" name="amount" required>
+        </div>
 
-      <b><label class="form-label" for="pin-input">PIN</label></b>
-      <div class="input-group mb-3">
-        <span class="input-group-text">🔑</span>
-        <input type="password" class="form-control" id="pin-input" name="pin" required>
-      </div>
-      <button type="submit" class="btn btn-primary w-100">Deposit</button>
-    </form>
+        <b><label class="form-label" for="pin-input">PIN</label></b>
+        <div class="input-group mb-3">
+          <span class="input-group-text">🔑</span>
+          <input type="password" class="form-control" id="pin-input" name="pin" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Deposit</button>
+      </form>
+    </div>
   </main>
-  <script src="./js/deposit.js"></script>
+  <script src="../js/deposit.js"></script>
 </body>
 
 </html>
